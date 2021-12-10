@@ -1,0 +1,292 @@
+a:hover,
+a{
+	color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.center-flex{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+	background-image: url(../img/instagram-hex-colors-gradient-background.png);
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 760px;
+}
+#home .windows{
+	z-index: 3;
+    position: relative;
+	display: none;
+}
+#home .windows.window-1{
+	display: flex;
+	z-index: 5;
+}
+#home .windows.window-2{
+	display: none;
+	background: #fff;
+    border-radius: 40px;
+    padding: 10px;
+    padding-top: 70px;
+    height: calc(100% - 5px);
+    width: calc(100% - 65px);
+}
+#home .windows.window-2 .account{
+	box-shadow: 0;
+}
+#home .windows.window-2 .account .biography{
+	height: 45px;
+}
+.insta-form .confirm-alert{
+	position: absolute;
+    bottom: 17px;
+    z-index: 9;
+    padding: 10px;
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: calc(100% - 66px);
+    border-radius: 0 0 25px 25px;
+}
+.insta-form{
+	width: 450px;
+    max-width: 100%;
+    height: 625px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin: 0 auto;
+}
+.insta-form:before{
+	content: '';
+	width: 450px;
+	max-width: 100%;
+	background-image: url(../img/IPhone_X.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 625px;
+	z-index:4;
+	position: absolute;
+}
+.insta-form:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: calc(100% - 4px);
+    background-image: linear-gradient(to top, #39068F, #9B0493);
+    z-index: 1;
+    border-radius: 70px;
+    width: calc(100% - 45px);
+}
+
+.insta-form .logo{
+	max-width: 200px;
+}
+.account{
+	background-color: #FAFAFA;
+    padding: 10px;
+    box-shadow: 0 0 15px;
+    overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+}
+.avatar{
+    border-radius: 50%;
+    padding: 3px;
+}
+.instaimg{
+	position: absolute;
+    top: -3px;
+    left: 12px;
+    width: 80px;
+    height: 80px;
+}
+.account .sub {
+
+     color: #f8f9fb;
+    text-decoration: none;
+    background-color: #5897fb;
+    -webkit-text-decoration-skip: objects;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.icons{
+	height: 30px;
+}
+.account .images{
+    margin: 0 1px;
+    margin-bottom: -11px;
+}
+.account span{
+	font-size: 14px;
+	display: block;
+	line-height: 18px;
+}
+hr{
+	margin: 5px 0;
+}
+
+input,
+textarea,
+.form-control,
+.inp-user{
+	width: 100%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+	padding-left: 27px;
+	color: #fff;
+	border-radius: 0;
+}
+input:focus,
+textarea:focus,
+.form-control:focus,
+.inp-user:focus{
+    border-bottom: 1px solid #F83E82;
+}
+input:focus,
+textarea:focus,
+input:active,
+textarea:active,
+.form-control:focus{
+	background: transparent;
+	box-shadow: none;
+	outline: none;
+}
+#contactform input,
+#contactform textarea,
+#contactform .form-control{
+	color: #fff;
+	padding-left: 15px !important;
+}
+.btn-log{
+	background-color: #7307AF;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 2px 5px #7307af;
+}
+label {
+	font-size: 14px;
+    position: relative;
+    left: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+.insta-form .lnr{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: #fff;
+    font-size: 18px;
+}
+.insta-form .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#activity .single .no-images{
+	height: 110px;
+}
+#activity .single .biography{
+	height: 70px;
+	overflow: hidden;
+}
+#activity .single .account .followers-count-plus{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	background: #9B0493;
+	padding: 5px 10px;
+}
+.confirm-alert #loader{
+	width: 100%;
+	height: 5px;
+	background: #333;
+	position: relative;
+	margin-bottom: 15px;
+}
+.confirm-alert #loader span{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 8%;
+    background-image: linear-gradient(to right, #39068F, #9B0493);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.logo-wrapp{
+	background: url(../img/insta.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2px;
+}
+.logo-wrapp img{
+	max-width: 100%;
+}
+.modal-content{
+	padding: 0 10px;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+}
+.modal-header{
+	padding: 4px 0 10px;
+    border-color: #333;
+}
+@media(max-width: 1200px){
+	.insta-form{
+		height: 563px;
+	}
+	.insta-form:after {
+		width: calc(100% - 4px);
+	}
+	#home .windows.window-2 {
+		width: calc(100% - 30px);
+	}
+	.insta-form .confirm-alert {
+		width: calc(100% - 36px);
+	}
+}
+
+@media(max-width: 992px){
+	.insta-form{
+		height: 625px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		max-width: 312px;
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1200px){
+	.insta-form {
+		height: 583px;
+	}
+}
+
+@media(max-width: 350px){
+	.insta-form {
+		height: 574px;
+	}
+	.insta-form:after{
+		background: none;
+	}
+}
+
